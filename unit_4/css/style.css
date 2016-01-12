@@ -33,3 +33,20 @@ p {
 #email {
 	color: #BDBFBF
 }
+div {
+	background: #FFE2B8;
+}
+header {
+	background: #FFED74;
+	border: 1px black solid;
+	padding: 10px;
+}
+nav {
+	background: #E8C66A;
+}
+section {
+	background: #FFE2B8;
+}
+footer {
+	background: #FF957E;
+}
