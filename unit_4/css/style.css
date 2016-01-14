@@ -2,21 +2,52 @@
 body {
 	background: url("http://bit.ly/22KJnc7");
 	background-size: cover;
-	color: rgb(255,255,255);
+	color: rgb(60,60,60);
 	font-family: 'Play', sans-serif;
 }
-#cover {
-	width: 1000px;
-	height: 500px;
-	display: block;
-	margin: 0 auto;
-	z-index: -1;
+section#splash {
+	background: url("http://www.rentmaster.ge/wp-content/uploads/2015/02/6773700-awesome-yacht-wallpaper.jpg");
+
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+}
+nav {
+	font-family: 'Play', sans-serif;
+	width: 100%;
+	text-transform: lowercase;
+	
+}
+a {
+	color: rgb(255,255,255);
+	padding: 20px;
+	text-decoration: none;
+	display: inline;
+	float: left;
+}
+nav ul {
+	padding: 1em;
+	width: 100%;
+}
+nav li {
+	display: inline;
+}
+nav a {
+	display: inline-block;
+	text-align: center;
+}
+nav a:hover {
+	background-color: rgba(60,60,60,0.5); 
 }
 #slogan {
 	font-size: 40px;
 	font-style: normal;
-	margin: 0 auto;
+	margin-top: 200px;
 	margin-bottom: 10px; 
+	text-transform: lowercase;
 }
 h1 {
 	font-size: 25px;
@@ -26,6 +57,7 @@ p {
 	font-size: 20px;
 	text-align: center;
 	margin-top: 10px;
+	text-transform: lowercase;
 }
 button {
 	display: block;
@@ -38,9 +70,9 @@ button {
 	font-weight: bold;
 	font-size: 14px;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-top: 10px;
 	width: 150px;
-	color: rgb(255,255,255);
+	color: rgb(60,60,60);
 }
 button:hover {
 	background-color: rgba(60,60,60,0.5);
@@ -50,7 +82,4 @@ button:hover {
 	text-align: center;
 	font-family: 'Play', sans-serif;
 	font-weight: bold;
-}
-#email {
-	color: rgb(255,255,255);
 }
