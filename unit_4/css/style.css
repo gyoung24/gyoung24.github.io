@@ -12,15 +12,18 @@ section#splash {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
-nav {
+div {
 	font-family: 'Play', sans-serif;
 	width: 100%;
 	text-transform: lowercase;
-	
+	text-align: center;
 }
+#main_nav {
+	text-align: center;
+	}
 a {
 	color: rgb(255,255,255);
 	padding: 20px;
@@ -28,18 +31,19 @@ a {
 	display: inline;
 	float: left;
 }
-nav ul {
+div ul {
 	padding: 1em;
 	width: 100%;
-}
-nav li {
-	display: inline;
-}
-nav a {
-	display: inline-block;
 	text-align: center;
 }
-nav a:hover {
+div li {
+	display: inline;
+	text-align: center;
+}
+div a {
+	text-align: center;
+}
+div a:hover {
 	background-color: rgba(60,60,60,0.5); 
 }
 #slogan {
