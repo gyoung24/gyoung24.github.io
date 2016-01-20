@@ -1,61 +1,72 @@
 @import url(https://fonts.googleapis.com/css?family=Play);
 body {
-	background: url("http://bit.ly/22KJnc7");
-	background-size: cover;
 	color: rgb(60,60,60);
 	font-family: 'Play', sans-serif;
 }
 section#splash {
-	background: url("http://www.rentmaster.ge/wp-content/uploads/2015/02/6773700-awesome-yacht-wallpaper.jpg");
-
+	background-image: url("http://images5.alphacoders.com/415/415003.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100%
 }
-div {
-	font-family: 'Play', sans-serif;
+nav {
+	position: absolute;
+	bottom: 0;
 	width: 100%;
+	text-align: center;
 	text-transform: lowercase;
-	text-align: center;
+	font-size: 1em;
+	font-family: 'Play', sans-serif;
+	background-color: #46464f;
+	
 }
-#main_nav {
-	text-align: center;
-	}
 a {
-	color: rgb(255,255,255);
-	padding: 20px;
+	color: rgb(60,60,60);
+	padding: 9px 27px 9px 27px;
 	text-decoration: none;
-	display: inline;
-	float: left;
 }
-div ul {
-	padding: 1em;
+nav ul {
+	list-style: none;
+	margin: 0 auto;
+	background-color: #46464f;
 	width: 100%;
-	text-align: center;
 }
-div li {
+nav li {
+	float: left;
 	display: inline;
-	text-align: center;
 }
-div a {
+nav a {
+	display: inline-block;
+	width: 50px;
+	margin: 2em;
 	text-align: center;
+	line-height: 2em;
+	color: rgb(60,60,60);
 }
-div a:hover {
+nav a:hover {
 	background-color: rgba(60,60,60,0.5); 
+}
+nav a#pull {
+	display: none;
+}
+h1 {
+	font-size: 25px;
+	font-family: 'Play', sans-serif;
+	margin: 0 0 0 20px;
+	color: rgb(60,60,60);
 }
 #slogan {
 	font-size: 40px;
 	font-style: normal;
+	font-family: 'Play', sans-serif;
 	margin-top: 200px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
+	text-align: center; 
 	text-transform: lowercase;
-}
-h1 {
-	font-size: 25px;
-	margin: 0 0 0 20px;
+	color: rgb(60,60,60);
 }
 p {
 	font-size: 20px;
@@ -81,9 +92,17 @@ button {
 button:hover {
 	background-color: rgba(60,60,60,0.5);
 }
-#my_photos {
-	padding: 9px 27px 9px 27px;
-	text-align: center;
-	font-family: 'Play', sans-serif;
-	font-weight: bold;
+.clearfix:before,
+.cleafix:after {
+	content: "."
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+footer {
+	clear: both;
 }
