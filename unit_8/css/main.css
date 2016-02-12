@@ -53,7 +53,7 @@ section {
 }
 
 section.splash {
-	background: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
+	background: url("file:///Users/Greg/Desktop/gyoung24.github.io/unit_8/css/images/sailboat_hp.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -174,7 +174,7 @@ h3 {
 }
 @media only screen and (min-width: 650px) and (max-width: 1280px) {
 	#splash {
-		background-image: url("images/albertdock.jpg");
+		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/unit_8/css/images/sailboat_hp.jpg");
 		height: 100%;
 	}
 
@@ -209,7 +209,7 @@ footer {
 }
 @media only screen and (min-device-width : 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
 	#splash {
-		background-image: url("images/albertdock.jpg");
+		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/unit_8/css/images/sailboat_hp.jpg");
 		height: 10%;
 		width: 100%;
 		background-position: center center;
