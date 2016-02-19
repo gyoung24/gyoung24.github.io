@@ -87,34 +87,9 @@ label[for="nav-trigger"] {
     z-index: 1;
 }
 
-.nav {
-	width:100%;
-	background: rgba(60,60,60,.8);
-	height: 3em;
-	position: relative;
-	top:94%;
-}
-
-nav a {
-	float: left;
-	width: 25%;
-	text-align: center;
-	font-size: 1em;
-	color: rgb(255,255,255);
-	margin-top: 15px;
-	text-transform: lowercase;
-	text-decoration: none;
-}
-
-nav a:hover, nav a:active {
-    color: rgb(200,200,200);
-}
-
-section.splash {
+.splash {
 	background-image: url("../images/sailboat.png");
 	background-size: cover;
-	background-attachment: fixed;
-	color:#000000;
 	height:100vh;
 	width: 100%;
 }
@@ -167,18 +142,18 @@ button:hover {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 50px auto;
 	padding: 0;
 	overflow: hidden;
 }
 
 .col {
-	width: 27%;
+	width: 31.333333%;
 	float: left;
 	display: inline-block;
-	margin: 3.16666666666667%;
+	margin: 1%;
 }
 
 .col img {
@@ -189,13 +164,16 @@ button:hover {
 .row_2 {
 	display: inline-block;
 	width: 100%;
-	margin: 3.16666666666667%;
+	margin: 1%;
 	overflow: hidden;
+}
+.row_2 img {
+	width: 100%;
 }
 footer {
 	background-color: rgba(60,60,60,.8);
 	font-family: 'Play', sans-serif;
-	font-color: rgb(255,255,255);
+	color: rgb(255,255,255);
 	font-size: .9em;
 	width: 100%;
 	letter-spacing: 0.06em;
@@ -237,14 +215,7 @@ footer {
 	clear: both; 
 	height: 0; 
 }
-/*.container:before,
-.container:after { 
-	content: "."; 
-	visibility: hidden; 
-	display: block; 
-	height: 0; 
-	clear: both;
-}*/
+
 @media only screen and (max-width: 1200px) {
 	.col{
 		width: 44%;
@@ -322,20 +293,9 @@ footer {
 }
 @media only screen and (min-width: 650px) and (max-width: 1280px) {
 	
-	#splash {
-		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
+	.splash {
+		background-image: url("../images/sailboat.png");
 		height: 100%;
-	}
-
-	.nav {
-		font-size: 1em;
-		color: #000000;
-		text-decoration: none;
-		list-style: none;
-	}
-
-	nav a:hover, nav a:active {
-    	color: #999999;
 	}
 
 	h1 {
@@ -343,31 +303,19 @@ footer {
 		margin-top: 4.5em;
 	}
 
-	#slogan {
+	.slogan {
 		font-size: 2.5em;
 	}
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
-	#splash {
-		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
+	.splash {
+		background-image: url("../images/sailboat.png");
 		height: 10%;
 		width: 100%;
-		background-position: center center;
+		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-attachment:fixed;
 	}
-
-
-	.nav {
-		font-size: 1em;
-		color: black;
-		text-decoration: none;
-	}
-
-	nav a:hover, nav a:active {
-    	color: #999999;
-	}  
 
 	h1 {
 		font-size: 2em;
@@ -377,7 +325,7 @@ footer {
 		margin-top: 7em;
 	}
 
-	#slogan {
+	.slogan {
 		font-size: 1.5em;
 	}
 }
