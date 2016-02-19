@@ -6,11 +6,92 @@ body {
 	font-family: 'Play', sans-serif;
 }
 
+.offsite-navigation {
+    list-style: none;
+    background: #46464f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    padding-top: 0;
+    overflow: scroll;
+    padding-bottom: 100px;
+}
+
+.offsite-navigation .offsite-nav-item{
+	display: block;
+	float: none;
+	padding: 0;
+	font-family: 'Play', sans-serif;
+	font-size: .8em;
+ 	letter-spacing: 0.05em;
+ 	font-weight: 400;
+}
+
+.offsite-navigation .offsite-nav-item a{
+	padding: 25px;
+	text-align: left;
+	display: block;
+}
+
+#top{
+	padding-top: 30px;
+}
+
+.offsite-navigation .offsite-nav-item-selected{
+	font-weight: 700;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("../images/offsite-menu.png");
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .wrapper {
+    left: 200px;
+}
+
+.nav-trigger + label, .wrapper {
+    transition: left 0.2s;
+}
+
+.wrapper{
+	width: 100%;
+	min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
 .nav {
 	width:100%;
 	background: rgba(60,60,60,.8);
 	height: 3em;
-	position: absolute;
+	position: relative;
 	top:94%;
 }
 
@@ -31,7 +112,6 @@ nav a:hover, nav a:active {
 
 section.splash {
 	background: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
-	/*background-position: center;*/
 	background-size: cover;
 	background-attachment: fixed;
 	color:#000000;
@@ -112,7 +192,51 @@ button:hover {
 	margin: 3.16666666666667%;
 	overflow: hidden;
 }
+footer {
+	background-color: rgba(60,60,60,.8);
+	font-family: 'Play', sans-serif;
+	font-color: rgb(255,255,255);
+	font-size: .9em;
+	width: 100%;
+	letter-spacing: 0.06em;
+	font-weight: 400;
+	padding: 3% 0;
+}
 
+#icons {
+	width: 14%;
+	padding-top: 2%;
+	margin: 0 auto;
+}
+
+.icon-col {
+	width: 20%;
+	margin: 0 2.5%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+.icon-col img {
+	width: 100%;
+}
+
+.icon-col:hover {
+	background-color: rgba(255,255,255,.2);
+	-webkit-transition: all .1s ease-in-out;
+  	-moz-transition: all .1s ease-in-out;
+  	-o-transition: all .1s ease-in-out;
+ 	transition: all .1s ease-in-out;
+}
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
 /*.container:before,
 .container:after { 
 	content: "."; 
@@ -121,8 +245,83 @@ button:hover {
 	height: 0; 
 	clear: both;
 }*/
+@media only screen and (max-width: 1200px) {
+	.col{
+		width: 44%;
+		float: left;
+		display: inline-block;
+		margin: 3%;
+	}
+	footer{
+		padding: 3.5% 0;
+	}
 
+	#icons{
+		width: 21%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	footer{
+		padding: 4% 0;
+	}
+
+	#icons{
+		width: 22%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	label[for="nav-trigger"]{
+   		z-index: 2;
+	}
+	.offsite-navigation .offsite-nav-item a:active{
+		background-color: #d7dbdf;
+		color: #46464f;
+	}
+	.col{
+		width: 42%;
+		float: left;
+		display: inline-block;
+		margin: 4%;
+	}
+	footer{
+		padding: 5% 0;
+	}
+
+	#icons{
+		width: 28%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col{
+		width: 80%;
+		float: none;
+		display: block;
+		margin: 10%;
+	}
+	footer{
+		padding: 6.5% 0;
+	}
+
+	#icons{
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	footer{
+		padding: 9% 0;
+	}
+
+	#icons{
+		width: 45%;
+		padding-top: 6%;
+	}
+}
 @media only screen and (min-width: 650px) and (max-width: 1280px) {
+	
 	#splash {
 		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
 		height: 100%;
@@ -148,11 +347,6 @@ button:hover {
 		font-size: 2.5em;
 	}
 
-footer {
-	clear: both;
-}
-
-}
 @media only screen and (min-device-width : 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
 	#splash {
 		background-image: url("file:///Users/Greg/Desktop/gyoung24.github.io/master/images/sailboat_hp.jpg");
