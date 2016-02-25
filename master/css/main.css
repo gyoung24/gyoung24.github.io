@@ -6,8 +6,9 @@
 }
 
 body {
-	color:rgb(60,60,60);
+	color: rgb(60,60,60);
 	font-family: 'Play', sans-serif;
+	font-size: 16px;
 }
 
 /* TYPOGRAPHY */
@@ -15,16 +16,18 @@ body {
 h1 {
 	font-size: 1.75em;
 	font-family: 'Play', sans-serif;
-	margin-left: 1em;
-	color: rgb(60,60,60);
+	margin-left: .5em;
+	letter-spacing: 5px;
+	font-weight: 100;
 }
 
 p {
-	font-size: 20px;
+	font-family: 'Play', sans-serif; 
+	font-size: 1.25em;
 	text-align: center;
 	margin-top: 10px;
 	text-transform: lowercase;
-	color: rgb(60,60,60);
+	font-weight: 600;
 }
 
 /* OFFSITE NAV */
@@ -104,7 +107,7 @@ label[for="nav-trigger"] {
 	width: 100%;
 	min-width: 100%;
     min-height: 100%;
-    background-color: #fff;
+    background-color: #EDEFED;
     position: relative;
     top: 0;
     bottom: 100%;
@@ -117,15 +120,19 @@ label[for="nav-trigger"] {
 .splash {
 	background-image: url("../images/sailboat.png");
 	background-size: cover;
+	background-position: center;
 	height:100vh;
 	width: 100%;
 }
 
+.heading {
+
+}
 .slogan{
-	font-size: 40px;
+	font-size: 2.5em;
 	font-style: normal;
 	font-family: 'Play', sans-serif;
-	margin-top: 340px;
+	margin-top: 25%;
 	margin-bottom: 10px;
 	text-align: center; 
 	text-transform: lowercase;
@@ -155,13 +162,21 @@ button:hover {
 
 /* Content */
 
+.explore {
+	width: 315px;
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: rgb(86,90,92)
+}
+
 .container {
 	max-width: 1000px;
 	width: 100%;
-	margin: 50px auto;
+	margin: 80px auto;
 	padding: 0;
 	overflow: hidden;
-	position: relative;
 }
 
 .col {
@@ -169,6 +184,7 @@ button:hover {
 	float: left;
 	display: inline-block;
 	margin: 1%;
+	position: relative;
 }
 
 .col img {
@@ -181,6 +197,7 @@ button:hover {
 	width: 98%;
 	margin: 1%;
 	overflow: hidden;
+	position: relative;
 }
 
 .row_2 img {
@@ -189,10 +206,10 @@ button:hover {
 
 .overlay {
 	position: absolute;
-	top: 145px;
+	top: 40%;
 	width: 100%;
 	color: white;
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
 	text-transform: lowercase;
 }
@@ -200,13 +217,13 @@ button:hover {
 /* FOOTER */
 
 footer {
-	background-color: rgba(60,60,60,.8);
+	background-color: rgba(86,90,92,.8);
 	font-family: 'Play', sans-serif;
 	color: rgb(255,255,255);
 	font-size: .9em;
 	width: 100%;
-	letter-spacing: 0.06em;
-	font-weight: 400;
+	letter-spacing: 0.15em;
+	font-weight: 100;
 	padding: 3% 0;
 }
 
@@ -218,7 +235,7 @@ footer {
 
 .icon-col {
 	width: 20%;
-	margin: 0 2.5%;
+	margin: 0 6.5%;
 	float: left;
 	display: inline-block;
 	text-align: center;
