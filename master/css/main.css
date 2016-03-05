@@ -38,7 +38,7 @@ a {
 
 /* OFFSITE NAV */
 
-.offsite-navigation {
+/*.offsite-navigation {
     list-style: none;
     background: #46464f;
     width: 100%;
@@ -91,7 +91,7 @@ label[for="nav-trigger"] {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background-image: url("../images/offsite-menu.png");
+    background-image: url("../assets/offsite-menu.png");
     background-size: contain;
 }
 
@@ -234,7 +234,11 @@ footer {
 	padding: 3% 0;
 }
 
-#icons {
+footer p {
+	font-weight: 100;
+}
+
+/*#icons {
 	width: 14%;
 	padding-top: 2%;
 	margin: 0 auto;
@@ -258,7 +262,7 @@ footer {
   	-moz-transition: all .1s ease-in-out;
   	-o-transition: all .1s ease-in-out;
  	transition: all .1s ease-in-out;
-}
+}*/
 
 /* CLEARFIX */
 
@@ -273,69 +277,110 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1200px) {
-	.col{
-		width: 44%;
-		float: left;
-		display: inline-block;
-		margin: 3%;
-	}
+@media screen and (max-width: 1200px) {
+	
 	footer{
 		padding: 3.5% 0;
 	}
 
-	#icons{
+	/*#icons{
 		width: 21%;
+	}*/
+}
+
+@media screen and (max-width: 1015px) {
+	
+	.container {
+		max-width: 666px;
+		width: 100%;
+		margin: 50px auto;
+	}
+
+	.col {
+	width: 46.99%;
+	float: left;
+	display: inline-block;
+	margin: 1%;
+	position: relative;
+	}
+	
+	.row_2 {
+		display: inline-block;
+		width: 95.8%;
+		margin: 1%;
+		overflow: hidden;
+		position: relative;
 	}
 }
 
 @media screen and (max-width: 1000px) {
+	
 	footer{
 		padding: 4% 0;
 	}
 
-	#icons{
+	/*#icons{
 		width: 22%;
-	}
+	}*/
 }
 
 @media screen and (max-width: 800px) {
-	label[for="nav-trigger"]{
+	/*label[for="nav-trigger"]{
    		z-index: 2;
 	}
 	.offsite-navigation .offsite-nav-item a:active{
 		background-color: #d7dbdf;
 		color: #46464f;
 	}
-	.col{
-		width: 42%;
-		float: left;
-		display: inline-block;
-		margin: 4%;
-	}
+*/	
 	footer{
 		padding: 5% 0;
 	}
 
-	#icons{
+	/*#icons{
 		width: 28%;
-	}
+	}*/
 }
 
-@media screen and (max-width: 600px) {
-	.col{
-		width: 80%;
-		float: none;
-		display: block;
-		margin: 10%;
+@media screen and (max-width: 730px) {
+
+
+	.row_2 {
+		display: inline-block;
+		width: 96.5%;
+		margin: 1%;
+		overflow: hidden;
+		position: relative;
 	}
+	
+}
+
+@media screen and (max-width: 685px) {
+
+	.container {
+		max-width: 100%;
+	}
+
+	.col {
+		width: 100%;
+		margin: 1% auto
+	}
+
+	.row_2 {
+		width: 100%;
+		display: block;
+		margin: 1% auto;
+		overflow: hidden;
+		position: relative;
+	}
+
 	footer{
 		padding: 6.5% 0;
 	}
 
-	#icons{
+	/*#icons{
 		width: 35%;
-	}
+	}*/
 }
 
 @media screen and (max-width: 400px) {
@@ -343,28 +388,13 @@ footer {
 		padding: 9% 0;
 	}
 
-	#icons{
+	/*#icons{
 		width: 45%;
-		padding-top: 6%;
+		padding-top: 6%;*/
 	}
 }
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
-	
-	.splash {
-		background-image: url("../images/sailboat.jpg");
-		height: 100%;
-	}
 
-	h1 {
-		font-size:3em;
-		margin-top: 4.5em;
-	}
-
-	.slogan {
-		font-size: 2.5em;
-	}
-
-@media only screen and (min-device-width : 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+@media screen and (min-device-width : 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
 	.splash {
 		background-image: url("../images/sailboat.jpg");
 		height: 10%;
