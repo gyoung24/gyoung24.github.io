@@ -1,0 +1,2 @@
+// API callback
+gbar.mkplcb91({"kind":"appsmarket#installedApps","domainName":"gust.com","installedApps":[{"name":"UberConference","url":"https://apis.google.com/additnow/l?applicationid=385479794093&__ls=ogb&__lu=https%3A%2F%2Fwww.uberconference.com%2Fgoogleauth%2F%3Faction%3Dapps","iconUrl48x48":"//lh5.googleusercontent.com/-3ueZEOnlGao/UqbrG_cL0UI/AAAAAAAAAOk/dPmvuw-oTPU/s0/icon_48.png","iconUrl96x96":"//lh6.googleusercontent.com/-SMa6teZGXw0/UqbrJkLpikI/AAAAAAAAAOw/zJ9WJtIFNN8/s0/icon_96.png"}]});
